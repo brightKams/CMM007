@@ -312,29 +312,37 @@ main.rgu_main_section {
     /* border: 1px solid; */
     padding-bottom: 15px;
 }
+
+
 .quick_nav_card a {
     display: block;
 }
 .quick_nav_card >  .quick_link_heading {
     margin: 10px 5px 15px 0;
 }
+.quick_nav_card_heading {
+    font-size: 2rem;
+}
 .quick_nav_card .quick_link_img {
     width: 100%;
     height: 300px;
-    border: 5px solid #d3d3d3;
+    background-size: cover;
+    background-position: top center;
+    border: 4px solid #d3d3d3;
 
 }
 
 a.pg_open_evening_card_img_link {
-    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
+    background: url("../images/pg_opening_img.jpg") repeat center;
+    /* background-size: contain; */
 }
 a.visit_us_card_img_link {
     width: 100%;
-    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
+    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat top center;
 }
 a.international_stds_card_img_link {
     width: 100%;
-    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
+    background: url("../images/international_students_img.jpg") no-repeat center;
 }
 
 
