@@ -219,7 +219,6 @@ main.rgu_main_section {
     padding: 10px;
 } 
 
-
 .search_btn {
     width: 23%;
     padding: 6px;
@@ -281,10 +280,7 @@ main.rgu_main_section {
     border-color: #6c6533;
 }
 
-
-/* Beginning of Courses Container */
-/* BEGINNING OF SEARCH COURSES SECTION */
-
+/* END OF SEARCH COURSES SECTION */
 
 /* RGU IMAGE BACKGROUND SECTION */
 .rgu_image_section {
@@ -292,11 +288,58 @@ main.rgu_main_section {
     background-size: cover;
     width: 100%;
     height: 450px;
-    
+    box-shadow: inset 3px 3px ;
+    /* border-radius: 0 0px 10px 10px; */
+    box-shadow: 0px 5px 0px 0px #e6e6e6;
+    margin-bottom: 15px;
+}
+/* END OF RGU IMAGE BACKGROUND SECTION */
+
+/* QUICK NAVIGATION CONTAINER SECTION */
+
+.quick_nav_container_section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
+
+}
+
+.quick_nav_card {
+    width: 33%;
+    height: 300px;
+    border: 1px solid;
+}
+.quick_nav_card a {
+    display: block;
+}
+.quick_nav_card >  .quick_link_heading {
+    margin: 10px 5px 5px 0;
+}
+.quick_nav_card .quick_link_img {
+    width: 100%;
+    height: 80%;
+    border: 2px double #d3d3d3;
+
+}
+
+a.pg_open_evening_card_img_link {
+    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
+}
+a.visit_us_card_img_link {
+    width: 100%;
+    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
+}
+a.international_stds_card_img_link {
+    width: 100%;
+    background: url("https://www.rgu.ac.uk/images/stories/flexicontent/mediaman/l_SIWB-Garthdee-Sign-ZF-2339-28278-1-001.jpg") no-repeat center;
 }
 
 
+/* END OF QUICK CONTAINER SECTION */
 
+
+/* END OF LARGER SCREENS */
 
 
 /* SMALLER SCREEN MEDIA QUERY */
@@ -314,10 +357,17 @@ main.rgu_main_section {
         width: 25%;
         
     }
+    /* End of Course Area Section */
+
+    /* BEGINNING OF QUICK NAV CONTAINER SECTION */
+    .quick_nav_card {
+        width: 49%;
+    }
     
 }
-@media screen  and (min-width:600px) and (max-width: 768px){
 
+@media screen  and (min-width:600px) and (max-width: 768px){
+    
     .logo_and_searchBar_nav_container {
         flex-direction: column;
     }
@@ -328,12 +378,14 @@ main.rgu_main_section {
         height: 25px;
         
     }
-
-     /* Course Area Section */
-     .courses_container .course {
+    
+    /* Course Area Section */
+    .courses_container .course {
         width: 33%;
         
     }
+    
+    /* End of Course Area Section */
     
 }
 
@@ -342,7 +394,7 @@ main.rgu_main_section {
     header.header_container.all_borders > .logo_and_searchBar_nav_container {
         flex-direction: column;
     }
-
+    
     .searchBar_container {
         float: none;
         width: 80%;
@@ -351,7 +403,7 @@ main.rgu_main_section {
     .header_navigation_container.all_borders {
         flex-direction: column;
     }
-
+    
     
     .header_navigation_container li {
         width: 100%;
@@ -365,14 +417,14 @@ main.rgu_main_section {
         color: #444;
         font-size: 1.25rem;
     }
-
-      /* Course Area Section */
-      .courses_container .course {
+    
+    /* Course Area Section */
+    .courses_container .course {
         width: 100%;
         text-align: center;        
     }
     
-
+    
     .courses_container .architecture.course {
         background-color: #007496;
     }
@@ -403,11 +455,17 @@ main.rgu_main_section {
     .courses_container .social_work_and_sciences.course {
         background-color: #6c6533;
     }
-
-
+    
+    
     .courses_container  a {
         color: var(--DEFAULT-LIGHT-FONT-COLOR);
         
     }
+
+    /* End of Course Area */
     
+    /* BEGINNING OF QUICK NAV CONTAINER SECTION */
+    .quick_nav_card {
+        width: 100%;
+    }
 }
