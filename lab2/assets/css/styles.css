@@ -1,0 +1,398 @@
+/* GLOBAL VARABLES */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --RGU-BG-COLOR: #712177;
+    --DEFAULT-RGU-FONT-COLOR: #712177;
+    --DEFAULT-RGU-FONT-FAMILY: ZonaPro-SemiBold,helvetica,arial,sans-serif;
+    --DEFAULT-BORDER: 1px solid;
+    --DEFAULT-LIGHT-FONT-COLOR: #fff;
+    }
+
+    body {
+        font-family: var(--DEFAULT-RGU-FONT-FAMILY);
+        padding: 0 20px;
+        border: none;
+        outline: none;
+        
+
+    }
+
+    /* TEST TO BE DELETED */
+.all_borders {
+    border: var(--DEFAULT-BORDER);
+    min-height: 50px;
+    /* min-width: 40%; */
+}
+.header_container {
+    border: var(--DEFAULT-BORDER);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.searchBar_nav_container .quickLinks {
+    background-color: #71217769;
+}
+
+/* END OF TEST TO BE DELETED */
+
+
+
+/* UTILITY STYLES */
+li {
+    overflow: hidden;
+    list-style: none;
+}
+li::marker {
+    content: " ";
+    display: inline-block;
+}
+li::marker:first {
+    content: " ";
+    display: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+/* END OF UTILITY STYLES */
+
+
+
+/* Header Section */
+
+.logo_and_searchBar_nav_container {
+    display: flex;
+    justify-content: space-between;
+    color: var(--DEFAULT-RGU-FONT-FAMILY);
+}
+
+
+.rgu_logo_nav {
+    background-color: var(--RGU-BG-COLOR);
+    display: flex;
+    align-items: center;
+}
+
+.header_container  nav{
+    display: flex;
+    align-items: center;
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+    padding: 10px;
+}
+
+
+.searchBar_nav_container .quickLinks {
+    padding: 10px 15px 20px;
+}
+
+.searchBar_nav_container a {
+    display: inline-block;
+    margin-left: 5px;
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+}
+.searchBar_nav_container a::before, .header_navigation_container a::before {
+    content: " ";
+    border: 2px solid;
+    background-color: var(--RGU-BG-COLOR);
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+    margin-right: 5px;
+    list-style-type: none;
+}
+.searchBar_nav_container a.homePage_link::before {
+    display: none;
+}
+
+.searchBar_container {
+    float: right;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+}
+
+.searchBar_text {
+    opacity: 0.4;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+.searchBar_container input.searchBar {
+    display: inline-block;
+    width: 70%;
+    margin: auto 5px;
+    padding: 5px;
+    height: 25px;
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+}
+.searchBar_container input.searchBar::placeholder {
+    padding: 5px;    
+}
+.searchBar_container  button{
+    padding: 5px;
+    color: var(--DEFAULT-LIGHT-FONT-COLOR);
+    background-color: var(--RGU-BG-COLOR);
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
+.header_navigation_container  {
+    padding: 20px 0 15px 20px;
+}
+.header_navigation_container.all_borders {
+    justify-content: space-between;
+    padding-right: 0;
+    background-color: #d9d9d9;
+    
+}
+.header_navigation_container li {
+    border: var(--DEFAULT-BORDER);
+    padding: 10px;
+    min-width: 12%;
+    font-size: 1rem;
+}
+.header_navigation_container li > a {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    height: 37px;
+    border-left: 3px solid;
+    padding-left: 10px;
+    color: #444;
+}
+.header_navigation_container li:first-of-type > a:first-of-type {
+    border-left: none;
+}
+
+.header_navigation_container a::before {
+    display: none;
+    margin-right: 20px;
+}
+.header_navigation_container li.study_areas a::before {
+    width: 100%;
+    border: var(--DEFAULT-BORDER);
+    display: none;
+}
+/* END OF HEADER SECTION FOR LARGE SCREEN */
+
+
+
+/* BEGINNING OF SEARCH COURSES SECTION */
+
+/* beginning of search course area container */
+.search_courses_heading {
+    background-color: var(--RGU-BG-COLOR);
+    color: var(--DEFAULT-LIGHT-FONT-COLOR);
+    padding: 0 2% 1%;
+}
+
+.search_courses_area {
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.25rem;
+    background-color: #f2f2f2;
+}
+.search_courses_area .course_list, .search_courses_area .search_keyword {
+    height: 30px;
+    width: 35%;
+    color: var(--DEFAULT-RGU-FONT-COLOR);
+    font-size: 0.75em;
+    outline-color: var(--DEFAULT-RGU-FONT-COLOR);
+    font-weight: bolder;
+}
+.search_courses_area .search_keyword{
+    padding: 10px;
+} 
+
+
+.search_btn {
+    width: 23%;
+    padding: 6px;
+    font-weight: bolder;
+}
+
+/* end of search course area container */
+
+/* Beginning of Courses Container */
+
+.courses_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    padding: 10px 0;
+
+}
+.courses_container .course {
+    width: 20%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: none;
+    border-left: 7px solid;
+    font-size: 1.25rem;
+}
+.courses_container .course a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.courses_container .architecture.course {
+    border-color: #007496;
+}
+.courses_container .business_mgt_and_acc.course {
+    border-color: #4c2842;
+}
+.courses_container .engineering.course {
+    border-color: #aa9c8d;
+}
+.courses_container .it_comunication_and_media.course {
+    border-color: #b40057;
+}
+.courses_container .law.course {
+    border-color: #f10000;
+}
+.courses_container .art_design.course {
+    border-color: #7b8f00;
+}
+.courses_container .computing.course {
+    border-color: #007f89;
+}
+.courses_container .health_professions.course {
+    border-color: #191d6f;
+}
+.courses_container .lab_biomed_and_sport.course {
+    border-color: #864a60;
+}
+.courses_container .social_work_and_sciences.course {
+    border-color: #6c6533;
+}
+
+
+
+
+
+
+
+
+/* SMALLER SCREEN MEDIA QUERY */
+
+@media screen  and (max-width: 900px){
+    .header_navigation_container li > a {
+        width: 100%;
+        font-size: 0.75rem;
+        height: 25px;
+        
+    }
+
+    /* Course Area Section */
+    .courses_container .course {
+        width: 25%;
+        
+    }
+    
+}
+@media screen  and (min-width:600px) and (max-width: 768px){
+
+    .logo_and_searchBar_nav_container {
+        flex-direction: column;
+    }
+    
+    .header_navigation_container li > a {
+        width: 100%;
+        font-size: 0.75rem;
+        height: 25px;
+        
+    }
+
+     /* Course Area Section */
+     .courses_container .course {
+        width: 33%;
+        
+    }
+    
+}
+
+
+@media screen and (max-width:576px) {
+    header.header_container.all_borders > .logo_and_searchBar_nav_container {
+        flex-direction: column;
+    }
+
+    .searchBar_container {
+        float: none;
+        width: 80%;
+        margin: auto;        
+    }
+    .header_navigation_container.all_borders {
+        flex-direction: column;
+    }
+
+    
+    .header_navigation_container li {
+        width: 100%;
+    }
+    .header_navigation_container li > a {
+        width: 70%;
+        justify-content: flex-start;
+        height: 37px;
+        border-left: none;
+        padding-left: 0;
+        color: #444;
+        font-size: 1.25rem;
+    }
+
+      /* Course Area Section */
+      .courses_container .course {
+        width: 100%;
+        text-align: center;        
+    }
+    
+
+    .courses_container .architecture.course {
+        background-color: #007496;
+    }
+    .courses_container .business_mgt_and_acc.course {
+        background-color: #4c2842;
+    }
+    .courses_container .engineering.course {
+        background-color: #aa9c8d;
+    }
+    .courses_container .it_comunication_and_media.course {
+        background-color: #b40057;
+    }
+    .courses_container .law.course {
+        background-color: #f10000;
+    }
+    .courses_container .art_design.course {
+        background-color: #7b8f00;
+    }
+    .courses_container .computing.course {
+        background-color: #007f89;
+    }
+    .courses_container .health_professions.course {
+        background-color: #191d6f;
+    }
+    .courses_container .lab_biomed_and_sport.course {
+        background-color: #864a60;
+    }
+    .courses_container .social_work_and_sciences.course {
+        background-color: #6c6533;
+    }
+
+
+    .courses_container  a {
+        color: var(--DEFAULT-LIGHT-FONT-COLOR);
+        
+    }
+    
+}
