@@ -184,9 +184,15 @@ a {
 
 
 
-/* BEGINNING OF SEARCH COURSES SECTION */
 
-/* beginning of search course area container */
+
+/* BEGINNING OF MAIN CONTAINER*/
+main.rgu_main_section {
+    margin: 15px auto;
+}
+
+
+/* beginning of search course section */
 .search_courses_heading {
     background-color: var(--RGU-BG-COLOR);
     color: var(--DEFAULT-LIGHT-FONT-COLOR);
@@ -220,9 +226,7 @@ a {
     font-weight: bolder;
 }
 
-/* end of search course area container */
-
-/* Beginning of Courses Container */
+/* End of search course Section */
 
 .courses_container {
     display: flex;
@@ -231,7 +235,7 @@ a {
     flex-wrap: wrap;
     row-gap: 5px;
     padding: 10px 0;
-
+    
 }
 .courses_container .course {
     width: 20%;
@@ -278,7 +282,18 @@ a {
 }
 
 
+/* Beginning of Courses Container */
+/* BEGINNING OF SEARCH COURSES SECTION */
 
+
+/* RGU IMAGE BACKGROUND SECTION */
+.rgu_image_section {
+    background: url(https://www.topmba.com/sites/default/files/styles/articles_inline/public/articles/lead-images/rgu.jpg.webp)  center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    
+}
 
 
 
