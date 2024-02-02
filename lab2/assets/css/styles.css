@@ -24,7 +24,7 @@
 
     /* TEST TO BE DELETED */
 .all_borders {
-    border: var(--DEFAULT-BORDER);
+    /* border: var(--DEFAULT-BORDER); */
     min-height: 50px;
     /* min-width: 40%; */
 }
@@ -352,6 +352,36 @@ a.international_stds_card_img_link {
 
 /* END OF QUICK CONTAINER SECTION */
 
+
+/* BEGINNING OF FOOTER */
+footer.footer_container {
+    border-top: 3px solid #9a9a9a;
+    border-bottom: 3px solid #9a9a9a;
+    padding: 20px 20px 30px;
+    text-align: center;
+}
+.connect_heading {
+    font-size: 3rem;
+}
+
+.social_media_handles_container {
+    width: 30%;
+    margin: 5px auto;
+}
+.socials {
+    display: inline-block;
+    margin:2px;
+    height: 50px;
+    width:  50px;
+
+    
+}
+
+.socials_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
 
 /* END OF LARGER SCREENS */
 
