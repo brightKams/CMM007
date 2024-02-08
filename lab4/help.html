@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <title>HELP PAGE</title>
+</head>
+<body>
+    <header class="magical_world_cheese_header" id="magical_world_cheese_header">
+        <div class="header_logo_container" id="header_logo_container">
+            <div class="logo_container all_borders" id="logo_container">
+                <a href="index.html">
+                    <img src="./assets/images/hard_cheese_img.jpg" alt="Magical World Cheese logo" class="logo_image"
+                        width="100px" height="100px">
+                </a>
+            </div>
+            <h1 class="logo_text" id="logo_text">
+                The Magical World of Cheese!
+            </h1>
+        </div>
+        <nav class="navigation_container all_borders" id="navigation_container">
+            <ul class="navigations all_borders" id="navigations">
+                <li class="cheese_hist_nav nav_item" id="cheese_hist_nav">
+                    <a href="history.html" class="cheese_hist_link nav_link" id="cheese_hist_link">The History of
+                        Cheese</a>
+                </li>
+                <li class="fav_cheese_nav nav_item" id="fav_cheese_nav">
+                    <a href="favourite.html" class="fav_cheese_link nav_link" id="fav_cheese_link">My Favourite
+                        Cheese</a>
+                </li>
+                <li class="cheese_jokes_nav nav_item" id="cheese_jokes_nav">
+                    <a href="jokes.html " class="cheese_jokes_link  nav_link" id="cheese_jokes_link">The Best Cheese
+                        Jokes</a>
+                </li>
+                <li class="cheese_help_nav nav_item" id="cheese_help_nav">
+                    <a href="help.html" class="cheese_help_link active nav_link" id="cheese_help_link">Help with Cheese</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="jokes_chesse_main_wrapper main_wrapper" id="jokes_cheese_main_wrapper">
+        <div class="help_cheese_card_wrapper all_borders" id="help_cheese_card_wrapper">
+            <h1 class="help_cheese_heading main_heading" id="help_cheese_heading">
+                Help with Cheese
+            </h1>
+            <form action class="help_cheese_form" id="help_cheese_form">
+
+                <div class="nameDetails form_detail_wrapper" id="nameDetails">
+                    <label for="fname">Name</label>
+                    <input type="text" name="fName" class="fName form_detail" id="fName" required>
+                </div>
+
+                <div class="email_details form_detail_wrapper" id="email_details">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email_address " class="email_address form_detail">
+                </div>
+
+                <div class="fav_cheese_detail form_detail_wrapper" id="fav_cheese">
+                    <label for="Favourite cheese">Favourite Cheese</label>
+                    <span class="fav_cheese_detail_wrapper form_detail" id="fav_cheese_detail_wrapper">
+                        <input type="radio" name="favourite" id="feta_cheese" class="feta_cheese">
+                        <span class="fav_cheese" id="fav_cheese">Feta</span>
+                        
+                        <input type="radio" name="favourite" id="gouda_cheese" class="gouda_cheese">
+                        <span class="fav_cheese" id="fav_cheese">Gouda</span>
+                        
+                        <input type="radio" name="favourite" id="other_cheese" class="other_cheese">
+                        <span class="fav_cheese" id="fav_cheese">Other</span>
+                    </span>
+                </div>
+
+                <div class="cheese_probs_detail form_detail_wrapper" id="cheese_probs_detail">
+                    <label for="Cheese Problem">What is your Cheese problem?</label>
+                    <textarea name="cheese_probs" class="cheese_probs_detail form_detail" id="cheese_probs_detail" cols="45" rows="10" placeholder="Hello, Please type your message for us here😊"></textarea>
+                </div>
+
+                
+            </form>
+        </div>
+    </main>
+
+    
+
+    <footer class="mice_people_footer all_borders" id="mice_people_footer">
+        <h4 class="mice_people_heading">
+            <center>
+                &copy; The Mice People
+            </center>
+
+        </h4>
+    </footer>
+</body>
+</html>

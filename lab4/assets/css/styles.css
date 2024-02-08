@@ -137,6 +137,36 @@ img {
 }
 
 
+/* HELP WITH CHEESE PAGE */
+
+.help_cheese_card_wrapper {
+    width: 80%;
+}
+
+.help_cheese_form > .form_detail_wrapper {
+    margin: 20px auto;
+}
+.help_cheese_form > .form_detail_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    
+}
+.help_cheese_form > .form_detail_wrapper > label {
+    width: 30%;
+
+}
+.help_cheese_form > .form_detail_wrapper > .form_detail {
+    width: 60%;
+    padding: 10px;
+
+}
+.fName, .email_address {
+    height: 40px;
+}
+
 
 
 /* MEDIA QUERY FOR VARIOUS SCREEN SIZES */
@@ -187,22 +217,42 @@ img {
     }
 
     
+    
 }
 
 @media screen and (max-width: 576px) {
     .jokes_cheese_card_container {
         flex-direction: column;
     }
-
+    
     .jokes_cheese_card {
         width: 100%;
         margin: auto;
     }
-
+    .help_cheese_card_wrapper {
+        width: 100%;
+    }
     .jokes_cheese_img {
         width: 100%;
         height: fit-content;
         /* display: block; */
         margin: 20px auto;
+    }
+    /* HELP WITH CHEES PAGE*/
+    .help_cheese_form > .form_detail_wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .help_cheese_form > .form_detail_wrapper > label {
+        width: fit-content;
+    }
+    .help_cheese_form > .form_detail_wrapper > .form_detail {
+        width: 80%;
+    }
+
+    .help_cheese_form > .form_detail_wrapper > .fav_cheese_detail_wrapper {
+        width: fit-content;
+        margin-top: 20px;
     }
 }
