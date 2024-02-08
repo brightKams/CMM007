@@ -67,6 +67,9 @@ img {
     align-items: center;
     justify-content: center;
 }
+.main_container {
+    width: 100%;
+}
 
 .homePage_img_container {
     display: flex;
@@ -88,9 +91,26 @@ img {
     width: 50%;
     padding: 20px;
 }
-.magical_world_text {
+.magical_world_text{
     padding: 20px;
 }
+.item {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.hist_cheese_text {
+    padding: 20px 0;
+}
+
+
+/* HISTORY OF CHEESE PAGE */
+
+.main_wrapper{
+    width: 95%;
+    margin: auto;
+    padding: 2%;
+}
+
 
 
 
@@ -115,7 +135,7 @@ img {
 }
 
 .navigations > .nav_item {
-    width: 80%;
+    width: 100%;
     margin: auto;
     padding: 20px;
 }
