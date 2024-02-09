@@ -8,9 +8,7 @@
     --DEFAUT-BORDER: 1px solid;
 
 }
- main {
-    background: url(../);
- }
+
 /* UTILITY STYLES */
 .all_borders {
     /* border: var(--DEFAUT-BORDER); */
