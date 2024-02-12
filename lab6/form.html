@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+    <title>FORM VALIDATION</title>
+    <script type="text/javascript">
+        function validate(form) {
+            fail = validateUsername(form.username.value);
+            fail += validatePassword(form.password.value);
+            fail += validateEmail(form.email.value);
+
+            if (fail == "")
+                return true;
+            else {
+                alert(fail);
+                return false;
+            }
+        }
+
+        function validateUsername(field) {
+            if (field == "")
+                return "No Username was entered. \n";
+            else if (field.length < 5) {
+                return "Usernames must be at least 5 characters.\n";
+                return "";
+            }
+        }
+
+        function validatePassword(field) {
+            if (field == "")
+                return "No password was entered.\n"
+            else if (field.length < 6)
+                return "Password must be at least 6 characters.\n";
+            return ""
+        }
+
+        function validateEmail(field) {
+            if (field == "")
+                return "No Email was entered.\n";
+            else if (!((field.indexOf(".") >0) && (field.indexOf("@")>0)) || /[^a-zA-Z0-9.@_.]/test(field) ) {
+                return "The Email address is invalid.\n";
+            return "";
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <form action="form.html" method="get" onsubmit="validate(this)" class="form_wrapper" id="form_wrapper">
+            
+            <p class="form_detail_wrapper" id="form_detail_wrapper">
+                <label for="username" class="username_label form_detail_label" id="username_label">
+                    Username
+                </label>
+                <input type="text" name="username" class="username form_detail" id="username_detail" required
+                    maxlength="5">
+            </p>
+            <p class="form_detail_wrapper" id="form_detail_wrapper">
+                <label for="email" class="email_label form_detail_label" id="email_label">
+                    Email
+                </label>
+                <input type="text" name="email" class="email_addr form_detail" id="email_addr_detail">
+            </p>
+
+            <p class="form_detail_wrapper" id="form_detail_wrapper">
+                <label for="password" class="password_label form_detail_label" id="password_label">
+                    Password
+                </label>
+                <input type="password" name="password" class="password form_detail" id="password_detail" required
+                    pattern=".{6}">
+            </p>
+
+            <p class="form_detail_wrapper" id="form_detail_wrapper">
+                <input type="submit" value="Submit" class="form_btn" id="form_btn">
+            </p>
+
+        </form>
+    </main>
+
+</body>
+
+</html>
