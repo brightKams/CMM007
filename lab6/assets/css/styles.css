@@ -39,3 +39,30 @@
     width: 70%;
 }
 
+/* UTILITY STYLES */
+
+li {
+    list-style-type: none;
+}
+
+.all_borders {
+    border: 1px solid;
+    min-height: 50px;
+}
+
+.logo-container {
+    background-color: #8d297e;
+    color: #fff;
+}
+.north_lab_header a{
+    color: #fff;
+}
+
+.nav-list, .launch_btn, .card-group.footer_bg  .card.footer_bg, .test_title  {
+    background-color: #79256a;
+    color: #fff;
+
+}
+.launch_btn:hover {
+    cursor: pointer;
+}
