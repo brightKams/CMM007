@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+  --LOGO-COLOR: #ff642f;
+  --FONT2: "Playfair Display";
+  --GREY-BG-COLOR: #d8d8d8;
+}
+
+/* VARIABLES */
+
+.logo {
+  color: var(--LOGO-COLOR);
+  width: 200px;
+  font-size: 3rem;
+  font-family: "Playball", cursive;
+}
+/* UTILITY STYLES */
+.nav-navigations {
+  font-family: "Playball", cursive;
+}
+
+.section-heading {
+  font-family: var(--FONT2);
+}
+
+.form-control:focus {
+  color: #000;
+  outline: 1px solid;
+  box-shadow: none;
+}
+
+ul.navbar-nav .nav-link.active {
+  font-weight: bolder;
+}
+
+ul.navbar-nav .nav-link {
+  color: #000;
+  font-weight: normal;
+}
+.user-access-wrapper {
+  width: 30%;
+}
+.user-btn {
+  width: 150px;
+  font-weight: bold;
+  font-family: var(--FONT2);
+}
+
+/* HERO SECTION */
+
+.main-wrapper {
+  margin-top: 5%;
+}
+
+.hero-desc-wrapper {
+  width: 48%;
+}
+
+.heroText-heading {
+  font-family: var(--FONT2);
+  font-weight: bolder;
+}
+
+/* .hero-text {
+  font-weight: bold;
+  width: 70%;
+} */
+
+.searchBar > .form-control,
+.searchBar > .btn {
+  border-radius: 0;
+  font-family: var(--FONT2);
+}
+
+.searchBar > .form-control,
+.featuredRecipe-heading, .popularDish-heading {
+  background-color: var(--GREY-BG-COLOR);
+}
+
+.searchField::placeholder {
+  text-align: center;
+}
+.hero-img-wrapper {
+  width: 45%;
+  height: 80vh;
+}
+
+.hero-img-wrapper > img {
+  height: 100%;
+  width: 100%;
+}
+
+/* END OF HERO SECTION */
+
+/* BEGINNING OF THE GET INSPIRED SECTION */
+
+section.getInspired-wrapper {
+  position: relative;
+}
+
+.getInspired-heading {
+  position: absolute;
+  top: 3%;
+  left: 41.5%;
+  z-index: 1000;
+}
+
+.getInspired-card-container-wrapper {
+  flex-wrap: wrap;
+}
+
+.getInspired-card.card {
+  height: 470px;
+  width: 20rem;
+  border: none;
+  position: relative;
+}
+.getInspired-card.card > img.get-inspired-bg {
+  display: inline-block;
+  height: 75%;
+  width: 100%;
+}
+
+.getInspired-img {
+  top: 15%;
+  left: 18%;
+}
+.getInspired-card.card > .card-body {
+  position: relative;
+}
+.getInspired-card.card > .card-body > .card-title {
+  position: absolute;
+  left: 12%;
+  width: 80%;
+  top: -33%;
+}
+
+/* END OF THE GET INSPIREDD SECTION */
+
+/* BEGINNING OF CATEGORIES SECTION */
+
+.categories-heading {
+  width: fit-content;
+  margin: auto;
+}
+
+.categories-container {
+  width: 98%;
+  height: 300px;
+  background-color: var(--GREY-BG-COLOR);
+  overflow-y: auto;
+}
+
+.category-item-container {
+  width: 250px;
+}
+
+.category-item-img-wrapper {
+  width: 200px;
+  height: 70%;
+}
+
+/* END OF CATEGORIES SECTION */
+
+/* BEGINNING OF FEATURED RECIPE SECTION */
+.featureRecipe-wrapper {
+  font-family: var(--FONT2);
+}
+.featured-recipes-container-wrapper {
+  width: 65%;
+}
+
+
+.featuredRecipe-heading, .popularDish-heading {
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  width: 90%;
+  margin-left: 3%;
+}
+.featuredRecipe-card {
+  height: 300px;
+  margin: 35px auto;
+  transition: all 1s ease-in-out;
+}
+.featuredRecipe-card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.recipe-card-body {
+  background-color: #e3f1ff;
+}
+
+.top-recipe-card,
+.popularDishRecipe-card {
+  width: 45%;
+  height: 250px;
+  background-position: top center;
+  background-size: cover;
+  transition: all 0.9s ease-in-out;
+}
+.top-recipe-card:first-of-type {
+  background: url("../images/seaFoods-img.png") no-repeat;
+}
+.top-recipe-card:nth-last-of-type(1) {
+  background: url("../images/pepperedKpomoAppetizers-img.png") no-repeat;
+}
+.top-recipe-card:hover,
+.popularDishRecipe-card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  margin: 3% 5%;
+}
+
+.top-recipe-title {
+  position: relative;
+  top: -10%;
+}
+
+.top-recipe-card .explore-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 33%;
+  width: 35%;
+  padding: 2%;
+}
+
+/* STYLES FOR POPULAR DISHES DISPLAY */
+
+
+.popularDishes-container-wrapper {
+    width: 30%;
+  }
+.popularDishRecipe-card {
+    height: 350px;
+
+}
+
+.popularDishRecipe-card, .popularDish-heading {
+    width: 80%;
+}
+.popularDish-heading {
+    margin-left: 10%;
+}
+
+.popularDishRecipe-card:first-of-type {
+  background: url("../images/snacks-img.png") no-repeat;
+
+}
+.popularDishRecipe-card:nth-of-type(2) {
+  background: url("../images/newRecipes-img.png") no-repeat;
+
+}
+
+
+
+.popularDishRecipe-title {
+  position: relative;
+  top: -30%;
+  font-weight: bolder;
+}
+
+.popularDishRecipe-card .explore-btn {
+  bottom: 25px;
+}
+
+/* END OF STYLES FOR POPULAR RECCIPE DISHES DISPLAY */
