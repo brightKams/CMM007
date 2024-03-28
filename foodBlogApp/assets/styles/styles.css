@@ -41,6 +41,12 @@ ul.navbar-nav .nav-link.active {
 ul.navbar-nav .nav-link {
   color: #000;
   font-weight: normal;
+  transition: all 0.3s ease-in-out;
+}
+ul.navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  
 }
 .user-access-wrapper {
   width: 30%;
@@ -185,14 +191,19 @@ section.getInspired-wrapper {
 .featuredRecipe-card {
   height: 300px;
   margin: 35px auto;
-  transition: all 1s ease-in-out;
+  transition: all 0.9s ease-in-out;
 }
 .featuredRecipe-card:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 10001;
 }
 .recipe-card-body {
-  background-color: #e3f1ff;
+    background-color: #e3f1ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .top-recipe-card,
