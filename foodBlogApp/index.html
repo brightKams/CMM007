@@ -52,9 +52,14 @@
 
 
             <div class="user-access-wrapper container d-flex justify-content-between">
-                <button class="btn user-btn bg-dark rounded-5 p-3 text-white">
-                    Sign up</button>
-                <button class="btn user-btn bg-dark rounded-5 p-3 text-white"> Login</button>
+                <!-- <form action="signup.html" method="post">
+                    <input type="submit" class="btn user-btn bg-dark rounded-5 p-3 text-white" value="Signup" name="signup" onclick="window.location.href = 'login.html'" >
+                </form> -->
+                <!-- <form action="login.php" method="post">
+                    <input type="submit" class="btn user-btn bg-dark rounded-5 p-3 text-white" value="Login" name="login" onclick="window.location.href = 'login.html'"> 
+                </form> -->
+                <button type="submit" class="btn user-btn bg-dark rounded-5 p-3 mx-2 text-white" name="signupBtn" onclick="window.location.href = 'signup.html'" > Sign up </button>
+                <button class="btn user-btn bg-dark rounded-5 p-3 mx-2 text-white" name="loginBtn" onclick="window.location.href = 'login.html'"> Login</button>
             </div>
 
         </nav>
@@ -210,14 +215,13 @@
                 <div class="category-item-container">
 
                     <h3 class="category-heading text-center p-2">
-                        <a href="" name="beverages-cat-quicklink"> Beverages </a>
+                        <a href="beverages.html" name="beverages-cat-quicklink"> Beverages </a>
                     </h3>
 
                     <div class="category-item-img-wrapper p- m-auto">
-                        <a href="">
+                        <a href="beverages.html">
                             <img src="./assets/images/beveragescat-img.png" class="beverages-cat-img p-2"
                                 alt="Beverages Category Image" height="100%" width="100%">
-
                         </a>
                     </div>
 
@@ -479,7 +483,7 @@
 
             </aside>
             <!-- END OF POPULAR DISHES SECTION -->
-            
+
         </section>
 
     </main>

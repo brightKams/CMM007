@@ -41,6 +41,7 @@ ul.navbar-nav .nav-link.active {
 ul.navbar-nav .nav-link {
   color: #000;
   font-weight: normal;
+  font-family: "Playball", cursive;
   transition: all 0.3s ease-in-out;
 }
 ul.navbar-nav .nav-link:hover {
@@ -49,14 +50,45 @@ ul.navbar-nav .nav-link:hover {
   
 }
 .user-access-wrapper {
-  width: 30%;
+  width: 25%;
 }
-.user-btn {
+.userProfile-access-wrapper {
+  width: fit-content;
+}
+.user-btn, .user-searchBtn {
   width: 150px;
   font-weight: bold;
   font-family: var(--FONT2);
 }
 
+/* .userSearch {
+    width: 100%;
+} */
+.userSearch:focus {
+    outline: 0;
+}
+.userAvatar-wrapper {
+    border-radius: 50%;
+    height: 60px;
+    
+}
+
+
+.userReview-wrapper {
+    width: fit-content;
+    background-color: #e3f1ff;
+}
+.userFullName, .dayWrapper, .chatCounter-wrapper {
+    background-color: transparent;
+    
+}
+.review-container:hover {
+    cursor: pointer;
+}
+
+.starReview {
+    color: #feb927;
+}
 /* HERO SECTION */
 
 .main-wrapper {
@@ -280,3 +312,128 @@ section.getInspired-wrapper {
 }
 
 /* END OF STYLES FOR POPULAR RECCIPE DISHES DISPLAY */
+
+/* END OF LANDING PAGE */
+
+
+/* BEGINNING OF SIGNUP PAGE */
+.formPage-body {
+    background:rgba(0, 0, 0, 0.2) url("../images/form-background.png") no-repeat top center;
+    background-position: top ;
+    background-size: cover;
+}
+
+
+.formMain-wrapper {
+    width: 65%;
+    margin: 1% auto;
+    background-color: #fff;
+    border: 3px solid  rgba(255, 245, 7, 1);
+    font-family: var(--FONT2) ;
+}
+
+.formImage-wrapper {
+    width: 50% !important;
+    background: url("../images/formConainer-img.png") no-repeat top right;
+    background-size: contain;
+
+}
+.signupForm-wrapper {
+    width: 50%;
+    margin: auto;
+}
+
+.formHeader {
+    z-index: 1200;
+    top: 5%;
+}
+
+.formLogo {
+    border-color: #ff642f !important;
+    transition: all 1s ease-in-out;
+    
+}
+.formLogo:hover {
+    border: 0 !important;
+    background-image: linear-gradient(to bottom right, rgba(255, 100, 47, 0.3), #eee7e44d);
+}
+
+.signupForm-wrapper .form-control {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0;    
+}
+.signupForm-wrapper .form-control:focus {
+     outline: 0;
+}
+.signupForm-wrapper .form-control::placeholder {
+     color: #ff642f;
+}
+.form-check-input:checked {
+    background-color: #ff642f;
+    border-color: #ff642f;
+}
+
+.signupBtn, .signinBtn {
+    background: #ff642f;
+    font-weight: bold;
+}
+.signup-quicklink, .agree-quicklink, .signin-quicklink {
+    color: #ff642f;
+}
+.signupBtn:hover, .signinBtn:hover {
+    background: #fff;
+    color: #ff642f !important;
+    border: 2px solid;
+}
+
+/* SIGNIN FORM */
+
+.signinFormMain-wrapper {
+    width: 50%;
+    /* margin: auto !important; */
+}
+
+
+
+
+
+
+/* BEGINNING OF CSS MEDIA QUERIES */
+
+
+@media screen and (max-width: 989px) {
+ 
+    .formHeader {
+        /* z-index: 1200; */
+        top: 2%;
+        left: 30%;
+    }
+    
+    .formLogo {
+        border: none !important;
+
+    }
+    .signupForm-wrapper {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .signinFormMain-wrapper {
+        width: 80%;
+        padding-top: 10% !important;
+    }
+    
+}
+
+
+@media screen and (max-width: 576px) {
+    .formMain-wrapper {
+        width: 90%;
+        
+    }
+    .signinFormMain-wrapper {
+        padding: 0 !important;
+    }
+}
+
