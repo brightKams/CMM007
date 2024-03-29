@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" type="text/css">
+    <title>TASTE9ja DESERTS</title>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- BEGINNING OF NAVIGATION -->
+
+    <header class="header-wrapper sticky-top container-fluid d-flex p-2">
+        <nav class="navbar navbar-expand-lg container-fluid  justify-content-between bg-body-white shadow">
+            <div class="container-fluid nav-navigations ">
+                <a class="navbar-brand" href="index.html">
+                    <p class="logo d-flex align-items-center justify-content-center m-auto p-2 text-center">Taste 9ja
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2 mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-2 mx-2 ">
+                            <a class="nav-link" href="#">Get Inspired</a>
+                        </li>
+                        <li class="nav-item px-2 mx-2 ">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li> -->
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="userProfile-access-wrapper px-3 d-flex align-items-center justify-content-between">
+                <div class="search border rounded-4">
+                    <input type="search" class="userSearch rounded-3 p-2" name="userSearch" id="userSearch">
+
+                </div>
+
+                <button type="search"
+                    class="btn  user-searchBtn bg-none rounded-5 py-2 d-flex justify-content-center align-items-center mx-2 text-black"
+                    name="signupBtn"> <span class="material-symbols-outlined fs-1">
+                        search
+                    </span>
+                </button>
+
+                <div class="userAvatar-wrapper border">
+                    <img src="./assets/images/avatarPlaceholder.png" class="user-avatar" alt="user-avatar" width="100%" height="100%">
+                </div>
+
+                <div class="logout-wrapper">
+                    <button
+                        class="btn user-btn bg-dark rounded-5 p-2 mx-2 text-white d-flex align-items-center justify-content-center"
+                        name="loginBtn" onclick="window.location.href = 'index.html'"><span
+                            class="material-symbols-outlined p-1">
+                            logout
+                        </span> Logout</button>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- END OF NAVIGATION -->
+
+
+
+    <!-- BEGINNING OF TEH MAN CONTAINER WRAPPER -->
+
+    <main class="recipeMain-wrappper border">
+
+        <!-- BEGINNING OF THE DOWNLOAD & FAVORURITE BUTTONS -->
+        <div class="downloadFavouriteRecipe-Wrapper d-flex px-5 py-3  justify-content-end ">
+            <!-- <span class=" "> -->
+            <div class="d-flex justify-content-between align-items-center ">
+                <button class="download btn btn-secondary rounded mx-3">
+                    <span class="downloadIcon material-symbols-outlined p-2 w-100">
+                        download
+                    </span>
+
+                </button>
+                <!-- </span> -->
+
+                <button class="favourite btn btn-secondary rounded mx-3">
+                    <span class="favoriteIcon material-symbols-outlined p-2 w-100">
+                        bookmark
+                    </span>
+
+                </button>
+            </div>
+            <!-- END OF DOWNLOAD & FAVORURITE BUTTONS -->
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+    <div class="beverages-wrapper container-fluid border border-5 p-4">
+        <h1 class="text-title border ">
+            Popular Nigerian Beverages
+        </h1>
+        <p class="text-content border">
+            Nigerian drinks include both soft drinks and all kinds of edible juice that are prepared and consumed in
+            Nigeria.
+            This article aims to showcase some of those drinks from Nigeria and explain how anybody could make them for
+            personal consumption. Apart from popular brands like Cocoa Cola, Pepsi, laccasera, Viju milk, etc. We are
+            going to learn how to prepare some local drinks in Nigeria.
+        </p>
+
+        <div class="beverageImage-wrapper border">
+            <img src="./assets/images/beveragesimages.png" alt="beverages Image" height="100%" width="100%">
+
+        </div>
+        <div class="review-wrapper">
+            <div class="userReview-wrapper border py-2 ps-2 my-2 pe-5 d-flex align-items-center justify-content-center">
+                <div class="userAvatar-wrapper d-flex border mx-2 align-items-center justify-content-center">
+                    <a href="#">
+                        <img src="./assets/images/avatarPlaceholder.png" alt="user-avatar" width="100%" height="100%">
+                    </a>
+                </div>
+                <button class="userFullName px-2  border-0 fw-bolder mx-2 " name="userFullName">Tricia Mark</button>
+
+                <button class="dayWrapper px-2  border-0 d-flex fw-bolder mx-2 align-items-center justify-content-center "> 
+                    <span class="material-symbols-outlined"> date_range </span> yesterday
+                </button>
+                <button class="chatCounter-wrapper px-2  border-0 d-flex align-items-center justify-content-center">
+                    <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>   
+                    (<span class="chatCounter">5</span>) 
+                </button>
+
+                <div class="review-container m-2 bg-white border p-3 rounded-pill align-items-center justify-content-center">
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                       </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- END OF THE MAIN CONTAINER WRAPER -->
+
+</body>
+
+</html>
