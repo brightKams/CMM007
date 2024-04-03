@@ -33,6 +33,18 @@
   outline: 1px solid;
   box-shadow: none;
 }
+.error {
+    display: block;
+    color: #ff0000;
+    /* border: 1px solid #ff0000; */
+}
+
+.success {
+    border: none;
+    color: #008000;
+}
+/* END OF UTILITY STYLES */
+
 
 ul.navbar-nav .nav-link.active {
   font-weight: bolder;
@@ -362,6 +374,7 @@ section.getInspired-wrapper {
     border: none;
     border-bottom: 1px solid;
     border-radius: 0;    
+    width: 100%;
 }
 .signupForm-wrapper .form-control:focus {
      outline: 0;
