@@ -19,6 +19,7 @@
 
 <body class="formPage-body">
     
+    
     <main class="formMain-wrapper d-flex position-relative justify-content-between shadow rounded p-5">
         <header class="formHeader position-absolute">
             <a class="navbar-brand" href="#">
@@ -34,7 +35,7 @@
             
 
         </div>
-        <form class="signupForm-wrapper row m-auto  p-2  needs-validation" novalidate>
+        <form class="signupForm-wrapper row m-auto  p-2 " action="signup.php" method="post" >
 
 
             <div class="formControl-wrapper col-12 ">
@@ -95,7 +96,7 @@
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                     <a href="#" class="agree-quicklink">
-                        <label class="form-check-label" for="invalidCheck">
+                        <label class="form-check-label" for="">
                             Agree to terms and conditions
                         </label>
                     </a>
@@ -113,8 +114,7 @@
             </div>
 
             <div class="col-8 m-auto">
-                <p class="membershipText text-center p-2 my-3">Already have an account? <a href="login.html"
-                        class="signup-quicklink"> Sign in</a> </p>
+                <p class="membershipText text-center p-2 my-3"> Already have an account? <a href="login.html" class="signup-quicklink"> Sign in</a> </p>
 
             </div>
         </form>

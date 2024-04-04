@@ -3,11 +3,13 @@ const last_name = document.querySelector("#lname");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 const confirm_password = document.querySelector("#confirmPassword");
-const signupBtn = document.querySelector("[id = 'signupBtn']")
+const signupBtn = document.querySelector("[id = 'signupBtn']");
+const signinBtn = document.querySelector("#signinBtn");
 const form = document.querySelector('form');
 
 
 // console.log(first_name, " ", last_name, " ", email, " ", password, " ", confirm_password, " ", signupBtn);
+console.log(email, " ", password, " ", signinBtn);
 
 // console.log("\n", form);
 
@@ -15,13 +17,17 @@ console.log("Hello");
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
-    validateInputs();  
+    if (validateInputs()) {
+        e.target.submit();
+    }
+    else {
+        console.log("Form Could not validate!");
+    }
 });
 
 // const inputGroup =  document.querySelector(".form-control").parentElement;
 // const errorDisplay = inputGroup.querySelector(".error");
-console.log( document.querySelector(".error"));
+console.log(document.querySelector(".error"));
 
 // console.log(errorDisplay.innerText, " error ");
 const setError = (element, message) => {
@@ -35,7 +41,7 @@ const setError = (element, message) => {
 
 };
 
-const setSuccess= element => {
+const setSuccess = element => {
     const inputGroup = element.parentElement;
     const errorDisplay = inputGroup.querySelector('.error');
     errorDisplay.innerText = " ";
@@ -59,58 +65,127 @@ const isValidPassword = password => {
 };
 
 const validateInputs = () => {
-    const first_nameValue = first_name.value.trim();
-    const last_nameValue = last_name.value.trim();
-    const emailValue = email.value.trim();
-    const passwordValue = password.value.trim();
-    const confirm_passwordValue = confirm_password.value.trim();
+    let isValid = true;
+    if (form.contains(first_name, last_name, confirm_password)) {
+        const first_nameValue = first_name.value.trim();
+        const last_nameValue = last_name.value.trim();
+        const emailValue = email.value.trim();
+        const passwordValue = password.value.trim();
+        const confirm_passwordValue = confirm_password.value.trim();
 
-    if (first_nameValue == "") {
-         setError(first_name, "First Name is required");
+
+        if (first_nameValue == "") {
+            setError(first_name, "First Name is required");
+            isValid = false;
+
+            isValid = false;
+        } else {
+            setSuccess(first_name);
+        }
+
+        if (last_nameValue == "") {
+            setError(last_name, "Last Name is required");
+            isValid = false;
+
+        } else {
+            setSuccess(last_name);
+        }
+
+        if (emailValue == "") {
+            setError(email, "Email is required");
+            isValid = false;
+
+        } else if (!isValidEmail(emailValue)) {
+            setError(email, "provide a valid email address");
+            isValid = false;
+
+        } else {
+            setSuccess(email);
+        }
+
+
+        if (passwordValue == "") {
+            setError(password, "Password is required");
+            isValid = false;
+
+        }
+        else if (!isValidPassword(passwordValue)) {
+            setError(password, "Password must contain at least 8 characters of one uppercase letter, lowercase letter, a number and one special character")
+        } 
+
+
+        else if (passwordValue.length < 8) {
+            setError(password, "Password must be at least 8 characters");
+            isValid = false;
+
+
+        } else {
+            setSuccess(password);
+        }
+
+        if (confirm_passwordValue === "") {
+            setError(confirm_password, "Please confirm Password");
+            isValid = false;
+
+        } else if (confirm_passwordValue !== passwordValue) {
+            setError(confirm_password, "Password doesn't match");
+            isValid = false;
+
+        } else {
+            setSuccess(confirm_password);
+        }
+
+
     } else {
-        setSuccess(first_name);
+
+        const emailValue = email.value.trim();
+        const passwordValue = password.value.trim();
+
+        if (emailValue === "") {
+            setError(email, "Email is required");
+            isValid = false;
+
+        } else if (!isValidEmail(emailValue)) {
+            setError(email, "provide a valid email address");
+            isValid = false;
+
+        } else {
+            setSuccess(email);
+            console.log("Successful email");
+        }
+
+
+        if (passwordValue === "") {
+            setError(password, "Password is required");
+            isValid = false;
+
+
+        }
+         else if (!isValidPassword(passwordValue)) {
+            setError(password, "Password must contain at least 8 characters of one uppercase letter, lowercase letter, a number and one special character")
+            isValid = false;
+        } 
+
+
+        else if (passwordValue.length < 8) {
+            setError(password, "Password must be at least 8 characters");
+            isValid = false;
+
+
+        } else {
+            setSuccess(password);
+            console.log("Successful Password");
+        }
+
+
     }
 
-    if (last_nameValue == "") {
-         setError(last_name, "Last Name is required");
-    } else {
-        setSuccess(last_name);
-    }
-
-    if (emailValue == "") {
-         setError(email, "Email is required");
-    } else if (!isValidEmail(emailValue)) {
-        setError(email, "provide a valid email address");
-    } else {
-        setSuccess(email);
-    }
-
-    if (passwordValue == "") {
-         setError(password, "Password is required");
-         
-    } else if (isValidEmail(passwordValue)) {
-        setError(password, "Password must contain at least 8 characters of one uppercase letter, lowercase letter, a digit and one special character")
-    } 
-    
-    
-    else if (passwordValue.length < 8) {
-        setError(password, "Password must be at least 8 characters");
-
-    } else {
-        setSuccess(password);
-    }
-
-    if (confirm_passwordValue === "") {
-        setError(confirm_password, "Please confirm Password");
-    } else if (confirm_passwordValue !== passwordValue) {
-        setError(confirm_password, "Password doesn't match");
-    } else {
-        setSuccess(confirm_password);
-    }
+    return isValid;
 
 
 
 };
+
 
 
 

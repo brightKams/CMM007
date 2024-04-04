@@ -1,9 +1,10 @@
 <?php
 include "connectdb.php" ;
  
-    echo $dbname ;
+    echo "<br> " . $dbname ;
     if(empty($_POST["email"]) || empty($_POST["password"])) {
         echo "Complete the empty Field(s)" ;
+        header('Location: login.html');
     }
     else {
         $email = $_POST["email"];
@@ -12,7 +13,7 @@ include "connectdb.php" ;
         $result = mysqli_query($db, $sql);
         if (mysqli_num_rows($result ) == 1) {
             # code...
-            header("Location: index.html");
+            header("Location: index.php");
         }
 
         else
