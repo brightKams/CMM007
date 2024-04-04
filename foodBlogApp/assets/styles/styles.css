@@ -43,6 +43,11 @@
     border: none;
     color: #008000;
 }
+
+.agree-quicklink:hover {
+    cursor: pointer;
+    /* display: none; */
+}
 /* END OF UTILITY STYLES */
 
 
@@ -391,9 +396,13 @@ section.getInspired-wrapper {
     background: #ff642f;
     font-weight: bold;
 }
-.signup-quicklink, .agree-quicklink, .signin-quicklink {
+.signup-quicklink, .agree-quicklink, .signin-quicklink, .form-title {
     color: #ff642f;
 }
+
+/* .form-title {
+    display: none !important;
+} */
 .signupBtn:hover, .signinBtn:hover {
     background: #fff;
     color: #ff642f !important;
