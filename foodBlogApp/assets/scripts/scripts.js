@@ -78,7 +78,7 @@ const validateInputs = () => {
             setError(first_name, "First Name is required");
             isValid = false;
 
-            isValid = false;
+            // isValid = false;
         } else {
             setSuccess(first_name);
         }
@@ -162,7 +162,7 @@ const validateInputs = () => {
 
         }
          else if (!isValidPassword(passwordValue)) {
-            setError(password, "Password must contain at least 8 characters of one uppercase letter, lowercase letter, a number and one special character")
+            setError(password, "Password must contain at least 8 characters of one uppercase letter, lowercase letter, a number and one special character");
             isValid = false;
         } 
 

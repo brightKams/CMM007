@@ -73,7 +73,7 @@ ul.navbar-nav .nav-link:hover {
   width: fit-content;
 }
 .user-btn, .user-searchBtn {
-  width: 150px;
+  width: 100px;
   font-weight: bold;
   font-family: var(--FONT2);
 }
@@ -86,8 +86,14 @@ ul.navbar-nav .nav-link:hover {
 }
 .userAvatar-wrapper {
     border-radius: 50%;
-    height: 60px;
+    height: 40px;
+    width: 40px;
     
+}
+
+.guest-user-avatar {
+  width: 50px;
+  height: 50px;
 }
 
 
@@ -95,7 +101,7 @@ ul.navbar-nav .nav-link:hover {
     width: fit-content;
     background-color: #e3f1ff;
 }
-.userFullName, .dayWrapper, .chatCounter-wrapper {
+.userFullName, .dayWrapper, .chatCounter-wrapper-btn {
     background-color: transparent;
     
 }
@@ -254,7 +260,9 @@ section.getInspired-wrapper {
     align-items: center;
     flex-direction: column;
 }
-
+.recipeName {
+  text-wrap: nowrap;
+}
 .top-recipe-card,
 .popularDishRecipe-card {
   width: 45%;
@@ -417,10 +425,62 @@ section.getInspired-wrapper {
 }
 
 
+/* END OF SIGNIN FORM */
+
+
+.groupRecipe-items > .card > .card-img-top {
+    height: 200px;
+    border-radius: 0;
+}
 
 
 
 
+.comment-wrapper hr {
+  color: #ff642f;
+  border-bottom: 3px solid;
+  
+}
+.comments-container-wrapper {
+  height: 400px;
+  /* border: 10px solid !important; */
+  overflow-y: auto;
+  
+}
+
+.comment-wrapper {
+  display: ;
+}
+.load-comments {
+  background-color: #ff642f;
+  color: #fff;
+}
+
+.commentBox-wrapper textarea {
+  width: 100%;
+  max-height: 400px;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.commentBtn {
+  width: 200px;
+  background-color: #ff642f;
+  color: #fff;
+  font-weight: bolder;
+}
+main.recipeMain-wrapper .featured-recipes-container-wrapper {
+  width: 100%;
+}
+main.recipeMain-wrapper .featured-recipes-container-wrapper .featuredRecipe-heading {
+  background-color: transparent;
+  margin: 0;
+  
+}
+/* main.recipeMain-wrapper .featured-recipes-container-wrapper .featuredRecipe-card {
+  margin-bottom: 50px;
+
+} */
 /* BEGINNING OF CSS MEDIA QUERIES */
 
 
@@ -446,6 +506,9 @@ section.getInspired-wrapper {
         padding-top: 10% !important;
     }
     
+    .recipeName {
+      text-wrap: wrap;
+    }
 }
 
 

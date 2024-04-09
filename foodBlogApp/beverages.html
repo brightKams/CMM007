@@ -67,7 +67,8 @@
                 </button>
 
                 <div class="userAvatar-wrapper border">
-                    <img src="./assets/images/avatarPlaceholder.png" class="user-avatar" alt="user-avatar" width="100%" height="100%">
+                    <img src="./assets/images/avatarPlaceholder.png" class="user-avatar" alt="user-avatar" width="100%"
+                        height="100%">
                 </div>
 
                 <div class="logout-wrapper">
@@ -91,7 +92,7 @@
 
     <!-- BEGINNING OF TEH MAN CONTAINER WRAPPER -->
 
-    <main class="recipeMain-wrappper">
+    <main class="recipeMain-wrapper">
 
         <!-- BEGINNING OF THE DOWNLOAD & FAVORURITE BUTTONS -->
         <div class="downloadFavouriteRecipe-Wrapper d-flex px-5 py-3  justify-content-end ">
@@ -119,55 +120,513 @@
 
 
         </div>
-    </main>
+        <!-- END OF DOWNLOAD AND FAVOURITE BUTTONS -->
+        <!-- BEGINNING OF THE HERO WRAPPER FOR GROUP RECIPE SECCTION -->
+        <div class="beverages-wrapper container-fluid p-4">
+            <h1 class="text-title ">
+                Popular Nigerian Beverages
+            </h1>
+            <p class="text-content pe-5">
+                Nigerian drinks include both soft drinks and all kinds of edible juice that are prepared and consumed in
+                Nigeria.
+                This article aims to showcase some of those drinks from Nigeria and explain how anybody could make them
+                for
+                personal consumption. Apart from popular brands like Cocoa Cola, Pepsi, laccasera, Viju milk, etc. We
+                are
+                going to learn how to prepare some local drinks in Nigeria.
+            </p>
 
-
-
-    <div class="beverages-wrapper container-fluid p-4">
-        <h1 class="text-title ">
-            Popular Nigerian Beverages
-        </h1>
-        <p class="text-content pe-5">
-            Nigerian drinks include both soft drinks and all kinds of edible juice that are prepared and consumed in
-            Nigeria.
-            This article aims to showcase some of those drinks from Nigeria and explain how anybody could make them for
-            personal consumption. Apart from popular brands like Cocoa Cola, Pepsi, laccasera, Viju milk, etc. We are
-            going to learn how to prepare some local drinks in Nigeria.
-        </p>
-
-        <div class="beverageImage-wrapper ">
-            <img src="./assets/images/beveragesimages.png" alt="beverages Image" height="100%" width="100%">
-
-        </div>
-        <div class="review-wrapper">
-            <div class="userReview-wrapper border py-2 ps-2 my-2 pe-5 d-flex align-items-center justify-content-center">
-                <div class="userAvatar-wrapper d-flex border mx-2 align-items-center justify-content-center">
-                    <a href="#">
-                        <img src="./assets/images/avatarPlaceholder.png" alt="user-avatar" width="100%" height="100%">
-                    </a>
-                </div>
-                <button class="userFullName px-2  border-0 fw-bolder mx-2 " name="userFullName">Tricia Mark</button>
-
-                <button class="dayWrapper px-2  border-0 d-flex fw-bolder mx-2 align-items-center justify-content-center "> 
-                    <span class="material-symbols-outlined"> date_range </span> yesterday
-                </button>
-                <button class="chatCounter-wrapper px-2  border-0 d-flex align-items-center justify-content-center">
-                    <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>   
-                    (<span class="chatCounter">5</span>) 
-                </button>
-
-                <div class="review-container m-2 bg-white border p-3 rounded-pill align-items-center justify-content-center">
-                        <span class="starReview material-symbols-outlined"> star </span>
-                        <span class="starReview material-symbols-outlined"> star </span>
-                        <span class="starReview material-symbols-outlined"> star </span>
-                        <span class="starReview material-symbols-outlined"> star </span>
-                       </div>
+            <div class="beverageImage-wrapper ">
+                <img src="./assets/images/beveragesimages.png" alt="beverages Image" height="100%" width="100%">
 
             </div>
-        </div>
-    </div>
+            <div class="review-wrapper">
+                <div
+                    class="userReview-wrapper border py-2 ps-2 my-2 pe-5 d-flex align-items-center justify-content-center">
+                    <div class="userAvatar-wrapper d-flex border mx-2 align-items-center justify-content-center">
+                        <a href="#">
+                            <img src="./assets/images/avatarPlaceholder.png" alt="user-avatar" width="100%"
+                                height="100%">
+                        </a>
+                    </div>
+                    <button class="userFullName px-2  border-0 fw-bolder mx-2 " name="userFullName">Tricia Mark</button>
 
+                    <button
+                        class="dayWrapper px-2  border-0 d-flex fw-bolder mx-2 align-items-center justify-content-center ">
+                        <span class="material-symbols-outlined"> date_range </span> yesterday
+                    </button>
+                    <button class="chatCounter-wrapper px-2  border-0 d-flex align-items-center justify-content-center">
+                        <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                        (<span class="chatCounter">5</span>)
+                    </button>
+
+                    <div
+                        class="review-container m-2 bg-white border p-3 rounded-pill align-items-center justify-content-center">
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- END OF THE WRAPPER FOR THE GROUP RECIPE SECTION -->
+
+
+        <!-- BEGINNING OF THE GROUP RECIPE ARTICLE -->
+        <article class="article-content container-fluid border">
+            <div class="group-recipe-article-text border p-3">
+                By reading this article you will learn how to make some of the popular Nigerian drinks, all of them
+                would be soft drinks that could be consumed by both adults and children alike. I got a message from a
+                member of the Kitchen who wanted to make the Chapman Nigerian drink for the kids.
+                <br>
+
+                So we are going to be making Chapman, the zobo drink and also a particular kind of fruit juice. We have
+                lots of fruits in Nigeria but the average Nigerian person is yet to learn how to get the juice out of
+                them.
+                So the most time we just allow them to waste away when we have them in large quantities, the best thing
+                would have been to make fruit juice out of them.
+                Fruits can be eaten fresh or turned into a very tasty juice. We have pineapple juice as one of the
+                Nigerian drinks. There are other popular drinks in Nigeria like orange juice and a blend of different
+                fruits, some of these fruit juice is very healthy and helps to fight heart diseases.
+                Over the past few months, I have been writing about healthy Nigerian foods and why it is necessary to
+                eat healthy foods in order to live a longer and healthy life.
+                I just finished a free eBook that would teach you how to make healthy foods. It is a must-have for every
+                Nigerian, that is why it is free. The information contained within is considered priceless, no kidding.
+                Back to the day, we are still on popular drinks in Nigeria.
+            </div>
+
+        </article>
+
+
+
+        <section class="groupRecipe-items border p-3 m-auto flex-row row flex-wrap g-4   ">
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                        <h5 class="recipe-name card-title my-0" name="recipe">Zobo Juice</h5>
+
+                        <div
+                            class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                        <h5 class="recipe-name card-title my-0" name="recipe">Tiger Nut Juice</h5>
+
+                        <div
+                            class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                        <h5 class="recipe-name card-title my-0" name="recipe">Fruit Juice</h5>
+
+                        <div
+                            class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                        <h5 class="recipe-name card-title my-0" name="recipe">Aloe Vera</h5>
+                        <div
+                            class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                        <h5 class="recipe-name card-title my-0" name="recipe">Fruit Juice</h5>
+
+                        <div
+                            class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                            <span class="starReview material-symbols-outlined"> star </span>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                    <h5 class="recipe-name card-title my-0" name="recipe">Fruit Juice</h5>
+
+                    <div
+                        class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                    <h5 class="recipe-name card-title my-0" name="recipe">Fruit Juice</h5>
+
+                    <div
+                        class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card m-auto rounded-0 border-0 my-2 p-0" style="width: 18rem;">
+                <img src="./assets/images/beveragesimages.png" class="card-img-top" alt="..." width="100%">
+                <div class="card-body p-1">
+                    <h6 class="recipe-category card-title my-0 py-0" name="recipeCategory">BEVERAGES</h6>
+                    <h5 class="recipe-name card-title my-0" name="recipe">Fruit Juice</h5>
+
+                    <div
+                        class="review-container px-2 m-0 bg-white shadow border d-inline-block p-1 rounded-pill align-items-center pt-1">
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                        <span class="starReview material-symbols-outlined"> star </span>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <!-- END OF THE GROUP RECIPE ITEMS -->
+        <!-- BEGINNING OF THE COMMENT SECTION -->
+    
+        <section class="comment-wrapper border p-3">
+            <h2 class="heading"> Already made this?</h2>
+            <p class="feedback-sub-title">Send your feedback.</p>
+            <hr class="col-7">
+            <h5 class="comment-heading">Comments(<span class="comment-count">4</span>)</h5>
+            <div class="comments-container-wrapper container-fluid ps-0 ">
+                <div class="comment-wrapper row ">
+    
+                    <div class="col-1 guest-user-avatar-wrapper d-flex justify-content-center pt-1 ">
+                        <img src="./assets/images/guest-user-avatar.png" alt="" class="guest-user-avatar" width="100%" height="100%">
+                    </div>
+    
+                    <div class="col-8 message-wrapper ">
+                        <div class="user-fullName fw-bolder">Jessica Jones</div>
+                        <div class="messagetTimeCounter" id="messageTimeCounter">45mins ago</div>
+                        <p class="meassageCOntent my-1" id="messageContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos.</p>
+                        <div class="comment-stats" id="comment-stats">
+                            <button class="chatCounter-wrapper-btn pe-2 ps-0 border-0 d-flex align-items-center justify-content-center">
+                                <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                                (<span class="chatCounter">5</span>) &nbsp;
+                                <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                                (<span class="chatCounter">5</span>)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="comment-wrapper row ">
+    
+                    <div class="col-1 guest-user-avatar-wrapper d-flex justify-content-center pt-1 ">
+                        <img src="./assets/images/guest-user-avatar.png" alt="" class="guest-user-avatar" width="100%" height="100%">
+                    </div>
+    
+                    <div class="col-8 message-wrapper ">
+                        <div class="user-fullName fw-bolder">Jessica Jones</div>
+                        <div class="messagetTimeCounter" id="messageTimeCounter">45mins ago</div>
+                        <p class="meassageCOntent my-1" id="messageContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos.</p>
+                        <div class="comment-stats" id="comment-stats">
+                            <button class="chatCounter-wrapper-btn pe-2 ps-0 border-0 d-flex align-items-center justify-content-center">
+                                <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                                (<span class="chatCounter">5</span>)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="comment-wrapper row ">
+    
+                    <div class="col-1 guest-user-avatar-wrapper d-flex justify-content-center pt-1 ">
+                        <img src="./assets/images/guest-user-avatar.png" alt="" class="guest-user-avatar" width="100%" height="100%">
+                    </div>
+    
+                    <div class="col-8 message-wrapper ">
+                        <div class="user-fullName fw-bolder">Jessica Jones</div>
+                        <div class="messagetTimeCounter" id="messageTimeCounter">45mins ago</div>
+                        <p class="meassageCOntent my-1" id="messageContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos.</p>
+                        <div class="comment-stats" id="comment-stats">
+                            <button class="chatCounter-wrapper-btn pe-2 ps-0 border-0 d-flex align-items-center justify-content-center">
+                                <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                                (<span class="chatCounter">5</span>)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+                <div class="comment-wrapper row ">
+    
+                    <div class="col-1 guest-user-avatar-wrapper d-flex justify-content-center pt-1 ">
+                        <img src="./assets/images/guest-user-avatar.png" alt="" class="guest-user-avatar" width="100%" height="100%">
+                    </div>
+    
+                    <div class="col-8 message-wrapper ">
+                        <div class="user-fullName fw-bolder">Jessica Jones</div>
+                        <div class="messagetTimeCounter" id="messageTimeCounter">45mins ago</div>
+                        <p class="meassageCOntent my-1" id="messageContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quos.</p>
+                        <div class="comment-stats" id="comment-stats">
+                            <button class="chatCounter-wrapper-btn pe-2 ps-0 border-0 d-flex align-items-center justify-content-center">
+                                <span class="p-0 mt-2 material-symbols-outlined"> tooltip </span>
+                                (<span class="chatCounter">5</span>)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="load-comments border btn p-3 my-4 mx-5 rounded-4 ">Load more Comments</button>
+    
+                <div class="writeComment-Container-wrapper  ">
+                    <div class="writeComment-heading d-flex justify-content-between align-items-center">
+                        <h6 class="commentBox-headding p-2 m-0"> Write a comment</h6>
+                        <div class="writeComment-heading"><a href="login.html" class="fw-bolder text-decoration-none">Login</a> to write a comment</div>
+                    </div>
+                    <div class="commentBox-wrapper p-2 m-auto">
+                        <form action="" class="commentBoxForm" method="get">
+                            <textarea name="commentMessage" id="" cols="30" rows="10" class="p-3 m-auto d-inline-block rounded-4"></textarea>
+                            <div class="commentBtn-wrapper d-flex justify-content-end">
+                                <input type="submit" value="Comment" class="commentBtn btn p-3 rounded-4 float-right align-self-end">
+    
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </section>
+        <!-- END OF THE COMMENT SECTION -->
+
+
+
+        <section class="featureRecipe-wrapper container-fluid m-auto py-4 ">
+            <div class="featured-recipes-container-wrapper m-auto  py-3">
+
+
+                <!-- FEATURED/GROUP RECIPES -->
+                <div class="featured-recipes-container py-2 m-auto flex-row row">
+                    <h2 class="featuredRecipe-heading  section-heading p-2 text-left fw-bolder ">You might also like</h2>
+
+                    <!-- ROW ONE FOR FEATURED/GROUP RECIPES -->
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/organicEssential-img.png" class="card-img-top rounded-top-4"
+                            alt="Organic Essentials Featured image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Orgainic Essential Cooking</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/efo-img.png" class="card-img-top rounded-top-4" alt="Efo Riro image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Efo Riro</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/egusiSoup-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured Egusi Soup Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Egusi Soup</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/afang-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured Afang Soup Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Afang Soup Recipes</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+                    <!-- END OF ROW ONE FOR FEATURED/GROUP RECIPES -->
+
+
+                    <!-- BEGINNING OF ROW TWO FOR FEATURED/GROUP RECIPES -->
+
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/jellofRice-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured jellof Rice Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Jellof Rice</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/continentalDishes-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured Continental Dishes Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Continental Dishes</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/jellofRice-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured jellof Rice Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Jellof Rice</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                    <div class="featuredRecipe-card card border-0 col-sm-6 col-md-3 col-12 my-5 mx-auto">
+                        <img src="./assets/images/continentalDishes-img.png" class="card-img-top rounded-top-4"
+                            alt="Featured Continental Dishes Image">
+                        <div class="card-body recipe-card-body rounded-bottom-4  mt-4">
+                            <h5 class="card-title recipeName">Continental Dishes</h5>
+
+                            <a href="#"
+                                class="explore-btn btn btn-dark p-2 px-3 rounded-4 d-flex slign-items-center justify-content-center m-auto w-50"
+                                name="explore-btn">Explore...</a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END OF ROW 2 FOR FEATURED/GROUP RECIPES -->
+
+
+            </div>
+
+
+            <!-- END OF FEATURED SECTION -->
+
+
+        </section>
+
+
+
+
+
+    </main>
     <!-- END OF THE MAIN CONTAINER WRAPER -->
+
+
+
+
+    <!-- BEGINNINNG OF THE FOOTER SECTION -->
+    <footer class="footer-wrapper container-fluid  p-2  ">
+
+        <nav class="navbar navbar-expand-lg container-fluid  justify-content-between bg-body-white ">
+            <div class="container-fluid nav-navigations row justify-content-between pe-0  ">
+
+                <div class="  d-flex col-8 align-items-center" id="navbarNav">
+                    <a class="navbar-brand " href="#">
+                        <p class="logo d-flex align-items-center justify-content-center m-auto p-2 text-center">Taste
+                            9ja
+                        </p>
+                    </a>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item px-2 mx-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-2 mx-2 ">
+                            <a class="nav-link" href="#">Get Inspired</a>
+                        </li>
+                        <li class="nav-item px-2 mx-2 ">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div
+                    class="user-access-wrapper col-2 flex-column flex-md-row container d-flex justify-content-end pe-0">
+                    <button class="btn user-btn bg-dark rounded-5 m-2 p-3 text-white">
+                        Sign up</button>
+                    <button class="btn user-btn bg-dark rounded-5 m-2 p-3 text-white"> Login</button>
+                </div>
+            </div>
+
+
+
+        </nav>
+
+    </footer>
+
+    <!-- END OF THE FOOTER SECTION -->
+
+
+
+
+
 
 </body>
 

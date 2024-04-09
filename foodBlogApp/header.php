@@ -70,7 +70,7 @@
 
             <div class="logout-wrapper">
                 <a
-                    class="btn user-btn bg-dark rounded-5 p-2 mx-2 text-white d-flex align-items-center justify-content-center"
+                    class="btn user-btn bg-dark rounded-5 p-1 mx-2 text-white d-flex align-items-center justify-content-center"
                     name="loginBtn" onclick="window.location.href = \'logout.php\'"><span
                         class="material-symbols-outlined p-1">
                         logout
