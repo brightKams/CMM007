@@ -27,17 +27,19 @@
 <?php
 
 include('connectdb.php');
+include("inputValidate.php");
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     #validating user inputs
     #$user_id = htmlspecialchars($_REQUEST["userID"]);
     // OR CREATING AN INPUT VALIDATION FUNCTION TO TEST ALL DATA INPUT
-    function validateInput($data)
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
+    // function validateInput($data)
+    // {
+    //     $data = trim($data);
+    //     $data = stripslashes($data);
+    //     $data = htmlspecialchars($data);
+    //     return $data;
+    // }
 
     $firstname =   validateInput($_POST['fname']);
     $lastname =   validateInput($_POST['lname']);

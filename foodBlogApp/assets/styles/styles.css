@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* VARIABLES */
@@ -188,8 +189,10 @@ section.getInspired-wrapper {
 }
 
 .getInspired-img {
-  top: 15%;
-  left: 18%;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  height: 150px;
 }
 .getInspired-card.card > .card-body {
   position: relative;
@@ -433,6 +436,14 @@ section.getInspired-wrapper {
     border-radius: 0;
 }
 
+.recipeBtn {
+  background-color: #ff642f;
+  color: #fff;
+}
+.recipeBtn:hover {
+  color: #ff642f;
+  border: 2px solid #ff642f;
+}
 
 
 
@@ -448,9 +459,9 @@ section.getInspired-wrapper {
   
 }
 
-.comment-wrapper {
+/* .comment-wrapper {
   display: ;
-}
+} */
 .load-comments {
   background-color: #ff642f;
   color: #fff;

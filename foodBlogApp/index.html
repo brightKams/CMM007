@@ -38,7 +38,7 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item px-2 mx-2 ">
-                            <a class="nav-link" href="#">Get Inspired</a>
+                            <a class="nav-link" href="#getInspired">Get Inspired</a>
                         </li>
                         <li class="nav-item px-2 mx-2 ">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -95,9 +95,9 @@
                 </div>
 
                 <div class="recipe-search-container container w-7100 mx-0">
-                    <form class="d-flex searchBar py-2" role="search">
-                        <input class="searchField form-control me-2 py-3 rounded-start w-75" type="search"
-                            placeholder="Search for reccipe ingredients" aria-label="Search">
+                    <form class="d-flex searchBar py-2" role="search" action="filter.php" method="get">
+                        <input class="searchField form-control me-2 py-3 rounded-start w-75" type="search" name="filterSearch"
+                            placeholder="Search for recipe ingredients" aria-label="Search">
                         <button class="btn bg-black text-white rounded-end w-25" type="submit">Search</button>
                     </form>
                 </div>
@@ -116,11 +116,11 @@
         <!-- START OF THE GET INSPIRED SECTION WRAPPER -->
 
 
-        <section class="getInspired-wrapper py-4 my-2 container-fluid ">
+        <section class="getInspired-wrapper py-4 my-2 container-fluid " id="getInspired">
 
             <h1 class="getInspired-heading  section-heading p-3 rounded bg-white  shadow">Get Inspired</h1>
 
-            <div class="getInspired-card-container-wrapper container w-75 m-auto my-3 d-flex justify-content-between">
+            <div class="getInspired-card-container-wrapper container m-auto my-3 d-flex justify-content-between">
                 <div class="getInspired-card card pb-3">
                     <img src="./assets/images/getinspired-bg.png" class="get-inspired-bg card-img-top rounded" alt="..."
                         height="200px" width="100px">
